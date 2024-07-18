@@ -66,7 +66,7 @@ mode: single
 ```
 
 # Inverter Grid Export Surplus
-**Description**: Control energy exporting according current spot prices  
+**Description**: Control energy surplus export according current spot price  
 **Dependency**: Czech Energy Spot Prices
 ```
 alias: Inverter Grid Export Surplus
