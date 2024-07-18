@@ -65,11 +65,11 @@ action:
 mode: single
 ```
 
-# Inverter Export Surplus
+# Inverter Grid Export Surplus
 **Description**: Control energy exporting according current spot prices  
 **Dependency**: Czech Energy Spot Prices
 ```
-alias: Inverter Export Surplus
+alias: Inverter Grid Export Surplus
 description: Export Surplus when non negative spot price
 trigger:
   - platform: template
