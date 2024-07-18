@@ -82,26 +82,26 @@ action:
             entity_id: sensor.current_spot_electricity_price
             below: 0
           - condition: state
-            entity_id: switch.inverter_export_surplus
+            entity_id: switch.inverter_grid_export_surplus
             state: "on"
         sequence:
           - service: switch.turn_off
             metadata: {}
             data: {}
             target:
-              entity_id: switch.inverter_export_surplus
+              entity_id: switch.inverter_grid_export_surplus
       - conditions:
           - condition: numeric_state
             entity_id: sensor.current_spot_electricity_price
             above: 0
           - condition: state
-            entity_id: switch.inverter_export_surplus
+            entity_id: switch.inverter_grid_export_surplus
             state: "off"
         sequence:
           - service: switch.turn_on
             metadata: {}
             data: {}
             target:
-              entity_id: switch.inverter_export_surplus
+              entity_id: switch.inverter_grid_export_surplus
 mode: single
 ```
