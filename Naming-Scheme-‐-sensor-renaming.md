@@ -1,4 +1,4 @@
-Sensor renaming without loosing history
+Sensor renaming without losing history
 
 Steps: 
 1. Open sensors detail page
