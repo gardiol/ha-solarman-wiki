@@ -29,7 +29,7 @@ description: Charge battery during T2 on bad solar forecast
 trigger:
   - platform: template
     value_template: >-
-      {% if states('sensor.solcast_pv_forecast_forecast_today') > 0 %}true{%
+      {% if states('sensor.solcast_pv_forecast_forecast_today') | float > 0 %}true{%
       endif %}
 condition:
   - condition: time
