@@ -1,5 +1,7 @@
 Sensor renaming without losing history
 
+_Get out of shackles of unperturbable past!_
+
 Steps: 
 1. Open sensors detail page
 2. Click on Settings
