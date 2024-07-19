@@ -27,10 +27,12 @@ mode: single
 alias: Inverter Grid Charging Program
 description: Charge battery during T2 on bad solar forecast
 trigger:
+  - platform: time
+    at: "04:00:00"
   - platform: template
     value_template: >-
-      {% if states('sensor.solcast_pv_forecast_forecast_today') | float > 0 %}true{%
-      endif %}
+      {% if states('sensor.solcast_pv_forecast_forecast_today') | float > 0
+      %}true{% endif %}
 condition:
   - condition: time
     after: "03:00:00"
