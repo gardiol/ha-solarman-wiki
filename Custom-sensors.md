@@ -115,3 +115,68 @@ _Custom sensor examples._
       scale: 0.1
       registers: [0x0204, 0x0205]
 ```
+
+# Today Losses [kWh]
+**Description**: Calculates today's energy consumption
+```
+- name: Today Consumption
+  alt: Daily Consumption
+  description: Includes today's house consumption as well inverter consumption and AC/DC conversion losses
+  class: "energy"
+  state_class: "total_increasing"
+  uom: "kWh"
+  rule: 1
+  digits: 1
+  registers: [0x0208, 0x0211, 0x0203, 0x0209, 0x0202]
+  sensors:
+    - scale: 0.1
+      registers: [0x0208]
+    - scale: 0.1
+      registers: [0x0211]
+    - scale: 0.1
+      registers: [0x0203]
+    - subtract:
+      scale: 0.1
+      registers: [0x0209]
+    - subtract:
+      scale: 0.1
+      registers: [0x0202]
+```
+
+# Total Consumption [kWh]
+**Description**: Calculates total energy consumption
+```
+- name: "Total Consumption"
+  description: Includes total house consumption as well inverter consumption and AC/DC conversion losses
+  class: "energy"
+  state_class: "total_increasing"
+  uom: "kWh"
+  rule: 3
+  digits: 1
+  registers:
+    [
+      0x020A,
+      0x020B,
+      0x0216,
+      0x0217,
+      0x0206,
+      0x0207,
+      0x020C,
+      0x020D,
+      0x0204,
+      0x0205,
+    ]
+  sensors:
+    - scale: 0.1
+      registers: [0x020A, 0x020B]
+    - scale: 0.1
+      registers: [0x0216, 0x0217]
+    - scale: 0.1
+      registers: [0x0206, 0x0207]
+    - subtract:
+      scale: 0.1
+      registers: [0x020C, 0x020D]
+    - subtract:
+      scale: 0.1
+      registers: [0x0204, 0x0205]
+```
