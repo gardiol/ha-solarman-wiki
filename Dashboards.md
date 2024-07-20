@@ -3,7 +3,7 @@
 
 _Change 'entitys' in following snippet accordingly_ 😉
 
-**Dependency**: Flexible Horseshoe Card for Lovelace, Solcast PV Forecast integration (for 'REMAINING')
+**Dependency**: Flexible Horseshoe Card for Lovelace, card-mod, Solcast PV Forecast integration (for 'REMAINING')
 ```
   - title: Energy
     path: energy
