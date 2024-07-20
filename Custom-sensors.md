@@ -116,7 +116,7 @@ _Custom sensor examples._
       registers: [0x0204, 0x0205]
 ```
 
-# Today Losses [kWh]
+# Today Consumption [kWh]
 **Description**: Calculates today's energy consumption
 ```
 - name: Today Consumption
