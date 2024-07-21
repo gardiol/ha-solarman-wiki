@@ -9,12 +9,11 @@ If you are not living in a place where is energy cost calculated as sum of all t
 # 🎁 Features
 - Discovery and not just during configuration but also as part of initialization (i.e. adapts to changed IP)
 - Registers which will be part of a request are decided dynamically (when not set in the inverter profile)
-- Different registers can be requested in specific intervals according to their 'update_interval' value set in the inverter profile file
+  - Can be requested individually in specific intervals according to their 'update_interval' value set in the inverter profile file
 - Attribute type of a sensor which can be attached to any other sensor
-- Supports configuration of inverter (Battery, Grid Zero Export, Grid Export Surplus, Work Mode Programs, ...)
-- Switch, Number and Time entity types for configuring the inverter
 - Configuration items for Battery Nominal Voltage and Battery Life Cycle Rating for calculating SOH and life cycles of the battery
-
+- Supports configuration of inverter (Battery, Grid Zero Export, Grid Export Surplus, Work Mode Programs, ...)
+  - Switch, Number and Time entity types for configuring the inverter
 
 ### Custom sensors (which are calculated over data from the inverter)
 - Battery SOH
