@@ -2,7 +2,7 @@ Welcome to the Solarman Stick Logger wiki!
 
 _Here you can read about some of the excessive integration features as well many general energy tips and tricks_
 
-## 💡 Tips and Tricks
+# 💡 Tips and Tricks
 
 If you are not living in a place where is energy cost calculated as sum of all three phases (e.g. Germany) but living in a place where is energy cost calculated for each phase individually (e.g. Czechia) in a three-phase systems then set the Zero Export value to at least 100 W. You will save some money! 😉
 
