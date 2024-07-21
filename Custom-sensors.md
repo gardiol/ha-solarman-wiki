@@ -17,7 +17,7 @@ _Custom sensor examples._
     - registers: [0x02A1]
     - registers: [0x02A2]
     - registers: [0x02A3]
-  icon: "mdi:solar-power-variant"t"
+  icon: "mdi:solar-power-variant"
 ```
 
 # Power losses [W]
