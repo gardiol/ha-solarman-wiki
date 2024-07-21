@@ -7,6 +7,7 @@ _Here you can read about some of the excessive integration features as well many
 If you are not living in a place where is energy cost calculated as sum of all three phases (e.g. Germany) but living in a place where is energy cost calculated for each phase individually (e.g. Czechia) in a three-phase systems then set the Zero Export value to at least 100 W. You will save some money! 😉
 
 # 🎁 Features
+- Implementation mainly focused on performance and reliability
 - Discovery and not just during configuration but also as part of initialization (i.e. adapts to changed IP)
 - Registers which will be part of a request are decided dynamically (when not set in the inverter profile)
   - Can be requested individually in specific intervals according to their 'update_interval' value set in the inverter profile file (defaults to 60 seconds)
