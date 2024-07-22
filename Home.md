@@ -17,8 +17,15 @@ If you are not living in a place where is energy cost calculated as sum of all t
   - Switch, Number and Time entity types for configuring the inverter
 
 ### Custom sensors (which are calculated over data from the inverter)
+- PV Power (combined power of all inputs)
+- Losses (calculates device consumption + AC/DC conversion losses)
+  - Power (current losses)
+  - Today Losses
+  - Total Losses
 - Battery SOH
 - Battery State ["charging", "standby", "discharging"]
 - Grid State ["On", "Off"]
 - Today Battery Life Cycles
 - Total Battery Life Cycles
+
+_More about that [here](https://github.com/davidrapan/ha-solarman/wiki/Custom-sensors)_
