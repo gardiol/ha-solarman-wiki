@@ -29,3 +29,11 @@ If you are not living in a place where is energy cost calculated as sum of all t
 - Total Battery Life Cycles
 
 _More about that [here](https://github.com/davidrapan/ha-solarman/wiki/Custom-sensors)_
+
+# Update Intervals
+
+Are fully configurable down to a single sensor but cause register values are in nature requested in batches is possible that some will update more frequently just because value was present in the request so it's a no brainer to also update it in the sensor from HA's side.
+
+> [!NOTE]  
+> Solarman is a mess!  
+> Even so the default update interval is set to 5 seconds, sometimes it goes up to ~25 seconds cause the logging device don't want to talk with us. 😊
