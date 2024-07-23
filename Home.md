@@ -37,4 +37,4 @@ Are fully configurable down to a single sensor but cause register values are in 
 > [!NOTE]  
 > Solarman is a mess!  
 > Even so the default update interval is set to 5 seconds, sometimes it goes up to ~25 seconds cause the logging device don't want to talk with us. 😊  
-> It's true that this upper bound is artificially set by timing parameters of the integration but it's already fine tunned and anything lower than that is causing tremendous issues! 
+> It's true that this upper bound is artificially set by timing parameters of the integration but it's already fine tunned and anything lower than that is just causing tremendous issues! 
