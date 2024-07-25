@@ -5,7 +5,7 @@ _Here you can read about some of the need-to-knows, excessive integration featur
 # ✍ Changes
 _What you need to know before for example switching from Stephan Joubert's integration._
 1. Any custom inverter definition profiles has to be within 'inverter_definitions/custom/' directory to persist through integration updates, etc.
-2. Sensors update interval is way more frequent but it does mainly affects sensors like current power, etc. And in a way that you always have the most accurate information. When comes to the actual data amount stored within HA that is controlled by recorder and its sampling rate.
+2. Sensors update interval is way more frequent but it does mainly affects sensors like current power, etc. And in a way so that you can always have the most accurate information possible. When comes to the actual data amount stored within HA that is controlled by recorder and its sampling rate.
 3. Don't be scared of changed entity names (HA is smart enough to keep history of all your sensors and you can even transfer it under new names).  
 _More about that [here](https://github.com/davidrapan/ha-solarman/wiki/Naming-Scheme-%E2%80%90-sensor-renaming)_
 
