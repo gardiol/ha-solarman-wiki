@@ -16,7 +16,8 @@ If you are not living in a place where is energy cost calculated as sum of all t
 - Supports configuration of inverter (Battery, Zero Export power, Grid Export Surplus, Work Mode Programs, ...)
   - Switch, Number and Time entity types for configuring the inverter
 
-### ⚙️ Custom sensors (which are calculated over data from the inverter)
+### ⚙️ Custom sensors  
+_which are calculated over data from the inverter_
 - PV Power (combined power of all inputs)
 - Losses (calculates device consumption + AC/DC conversion losses)
   - Power (current losses)
