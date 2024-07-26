@@ -11,7 +11,9 @@ _What you need to know before for example switching from Stephan Joubert's integ
 2. Sensors update interval is way more frequent but it does mainly affects sensors like current power, etc. And in a way so that you can always have the most accurate information possible. When comes to the actual data amount stored within HA that is controlled by recorder and its sampling rate.
 3. Don't be scared of changed entity names (HA is smart enough to keep history of all your sensors and you can even transfer it under new names).  
 _More about that [here](https://github.com/davidrapan/ha-solarman/wiki/Naming-Scheme-%E2%80%90-sensor-renaming)_
-4. Way more dangerous is when you load different profile (e.g. 'deye_hybrid.yaml' instead of 'deye_sg04lp3.yaml'). It will mess up with your values and thus history so be careful with selecting appropriate profile under existing name (e.g. when you re-add device for some reason).
+
+> [!WARNING]  
+> Way more dangerous is when you load different profile (e.g. 'deye_hybrid.yaml' instead of 'deye_sg04lp3.yaml'). It will mess up with your values and thus history (you will have to correct all values manually using Developer Tools) so be careful with selecting appropriate profile under existing name (e.g. when you re-add device for some reason).
 
 # 🎁 Features
 - Implementation mainly focused on performance and reliability
