@@ -38,7 +38,7 @@ _Which are calculated over data from the inverter_
 
 _More about that [here](https://github.com/davidrapan/ha-solarman/wiki/Custom-sensors)_
 
-# 🕑 Update Intervals
+## 🕑 Update Intervals
 
 Are fully configurable down to a single sensor but cause register values are in nature requested in batches is possible that some will update more frequently just because value was present in the response so it's a no brainer to also update it in the sensor from HA's side.
 
