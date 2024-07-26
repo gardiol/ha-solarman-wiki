@@ -21,6 +21,7 @@ If you are not living in a place where is energy cost calculated as sum of all t
 - Configuration items for Battery Nominal Voltage and Battery Life Cycle Rating for calculating SOH and life cycles of the battery
 - Supports configuration of inverter (Battery, Zero Export power, Grid Export Surplus, Work Mode Programs, ...)
   - Switch, Number and Time entity types for configuring the inverter
+- Configuring of the inverter won't interrupt fetching and has long enough timeout to overcome stick unresponsiveness
 
 ### ⚙️ Custom sensors  
 _Which are calculated over data from the inverter_
@@ -43,5 +44,5 @@ Are fully configurable down to a single sensor but cause register values are in 
 
 > [!NOTE]  
 > Solarman is a mess! 🤯  
-> Even so the default update interval is set to 5 seconds, sometimes it goes up to ~25 seconds cause the logging device don't want to talk with us. 😊  
+> Even so the default update interval is set to 5 seconds, sometimes it goes up to ~25 seconds cause the stick don't want to talk with us. 😊  
 > It's true that this upper bound is artificially set by timing parameters of the integration but it's already fine tunned and anything lower than that is just causing tremendous issues! 🙁
