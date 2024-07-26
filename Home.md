@@ -13,7 +13,7 @@ _What you need to know before for example switching from Stephan Joubert's integ
 _More about that [here](https://github.com/davidrapan/ha-solarman/wiki/Naming-Scheme-%E2%80%90-sensor-renaming)_
 
 > [!WARNING]  
-> Way more dangerous is when you load different profile (e.g. 'deye_hybrid.yaml' instead of 'deye_sg04lp3.yaml'). It will mess up with your values and thus history (you will have to correct all values manually using Developer Tools) so be careful with selecting appropriate profile under existing name (e.g. when you re-add device for some reason).
+> Way more dangerous is when you load wrong profile (e.g. 'deye_hybrid.yaml' instead of 'deye_sg04lp3.yaml'). It will mess up with your values and thus history (you will have to correct all values manually using Developer Tools) so be careful with selecting appropriate profile under existing name (e.g. when you re-add device for some reason).
 
 # 🎁 Features
 - Implementation mainly focused on performance and reliability
