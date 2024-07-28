@@ -44,10 +44,11 @@ _Custom sensor examples._
       registers: [0x027C, 0x02B6]
 ```
 
-# Today Losses [kWh]
+# Today's Losses [kWh]
 **Description**: Calculates today's energy losses from Today(Daily) sensors of the inverter
 ```
 - name: Today Losses
+  friendly_name: Today's Losses
   description: Includes today's consumption of the inverter device itself as well AC/DC conversion losses
   class: energy
   state_class: total_increasing
@@ -116,10 +117,11 @@ _Custom sensor examples._
       registers: [0x0204, 0x0205]
 ```
 
-# Today Consumption [kWh]
+# Today's Consumption [kWh]
 **Description**: Calculates today's energy consumption
 ```
 - name: Today Consumption
+  friendly_name: Today's Consumption
   alt: Daily Consumption
   description: Includes today's house consumption as well inverter consumption and AC/DC conversion losses
   class: energy
