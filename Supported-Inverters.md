@@ -1,6 +1,6 @@
 _Integration should work with really wide range of devices. That also means all devices supported by Stephan Joubert's integration._
 
-# Confirmed
+# ✔️ Confirmed
 _Here is just a list of devices confirmed from users._
 | Type                                     | Profile                                                          |
 |------------------------------------------|------------------------------------------------------------------|
