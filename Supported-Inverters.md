@@ -8,5 +8,6 @@ _Here is just a list of devices confirmed from users._
 | SUN-5/6/8/10/12K-SG04LP3                 | deye_sg04lp3.yaml                                                |
 | SUN-4/5/6/7/8/9/10/12K-G03               | deye_string.yaml                                                 |
 | SUN-M130/160/180/200G4-EU-Q0             | deye_4mppt.yaml                                                  |
+| SUN1300/1600/1800/2000G3-US-220/EU-230   | deye_4mppt.yaml                                                  |
 | SUN600/800/1000G3-US-220/EU-230          | deye_2mppt.yaml                                                  |
 | Sofar KTLX-G3                            | ???????????????                                                  |
