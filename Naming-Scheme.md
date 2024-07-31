@@ -1,4 +1,4 @@
-# Sensor renaming w/o losing history
+# Sensor renaming w/ history
 
 _Get out of shackles of unperturbable past!_
 
