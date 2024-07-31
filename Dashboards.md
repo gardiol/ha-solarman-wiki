@@ -839,3 +839,297 @@
   ```
 
 </details>
+
+# Apexcharts Card & Plotly Graph Card
+![forecast_daily_stats_graphs](https://github.com/user-attachments/assets/8a8e2c45-1420-453e-ae94-4b026d8f6d0c)
+
+**Dependency**: Apexcharts-card, Plotly Graph Card, Solcast PV Forecast integration, card-mod
+<details>
+  <summary>Apexcharts code</summary>
+
+  _Change 'entitys' in following snippet accordingly_ 😉
+  ```
+  type: custom:apexcharts-card
+  view_layout:
+    grid-area: solar
+  header:
+    show: true
+    standard_format: true
+    show_states: true
+    colorize_states: true
+  apex_config:
+    grid:
+      show: false
+    chart:
+      height: 400px
+    tooltip:
+      enabled: true
+      shared: true
+      followCursor: true
+    xaxis:
+      axisTicks:
+        show: false
+      axisBorder:
+        show: false
+  graph_span: 4d
+  now:
+    show: true
+    label: Now
+  span:
+    start: day
+    offset: '-1day'
+  all_series_config:
+    type: area
+    opacity: 0.3
+    stroke_width: 2
+  series:
+    - entity: sensor.inverter_battery
+      name: Battery
+      float_precision: 0
+      type: line
+      color: pink
+      opacity: 0.8
+      yaxis_id: capacity
+      extend_to: now
+      show:
+        legend_value: true
+        in_header: false
+      group_by:
+        func: last
+        duration: 5m
+    - entity: sensor.inverter_pv_power
+      name: Solar Power
+      float_precision: 3
+      color: '#ff9800'
+      yaxis_id: kWh
+      unit: kW
+      transform: return x/1000;
+      extend_to: now
+      show:
+        legend_value: true
+        in_header: false
+      group_by:
+        func: avg
+        duration: 5m
+    - entity: sensor.solcast_pv_forecast_forecast_today
+      name: Today's Forecast
+      extend_to: false
+      color: grey
+      opacity: 0.3
+      stroke_width: 0
+      yaxis_id: kWh
+      show:
+        legend_value: false
+        in_header: false
+      data_generator: |
+        return entity.attributes.detailedForecast.map((entry) => {
+              return [new Date(entry.period_start), entry.pv_estimate];
+            });
+    - entity: sensor.solcast_pv_forecast_forecast_tomorrow
+      name: Tomorrow's Forecast
+      float_precision: 3
+      extend_to: false
+      color: grey
+      opacity: 0.3
+      stroke_width: 0
+      yaxis_id: kWh
+      show:
+        legend_value: false
+        in_header: false
+      data_generator: |
+        return entity.attributes.detailedForecast.map((entry) => {
+              return [new Date(entry.period_start), entry.pv_estimate];
+            });
+    - entity: sensor.solcast_pv_forecast_forecast_day_3
+      name: Overmorrow's Forecast
+      float_precision: 3
+      extend_to: false
+      color: grey
+      opacity: 0.3
+      stroke_width: 0
+      yaxis_id: kWh
+      show:
+        legend_value: false
+        in_header: false
+      data_generator: |
+        return entity.attributes.detailedForecast.map((entry) => {
+              return [new Date(entry.period_start), entry.pv_estimate];
+            });
+    - entity: sensor.solcast_pv_forecast_forecast_today
+      yaxis_id: header_only
+      name: Today's Forecast
+      color: grey
+      show:
+        legend_value: true
+        in_header: true
+        in_chart: false
+    - entity: sensor.solcast_pv_forecast_forecast_remaining_today
+      yaxis_id: header_only
+      name: Remaining
+      color: grey
+      show:
+        legend_value: true
+        in_header: true
+        in_chart: false
+    - entity: sensor.solcast_pv_forecast_forecast_tomorrow
+      yaxis_id: header_only
+      name: Tomorrow's Forecast
+      color: grey
+      show:
+        legend_value: true
+        in_header: true
+        in_chart: false
+    - entity: sensor.solcast_pv_forecast_forecast_day_3
+      yaxis_id: header_only
+      name: Overmorrow's Forecast
+      color: grey
+      show:
+        legend_value: true
+        in_header: true
+        in_chart: false
+    - entity: sensor.solcast_pv_forecast_api_last_polled
+      yaxis_id: header_only
+      name: Last updated
+      color: grey
+      unit: ' min.'
+      transform: return ((Date.now()) - (new Date(x).getTime())) / 60 / 60 / 24
+      show:
+        legend_value: true
+        in_header: true
+        in_chart: false
+  yaxis:
+    - id: capacity
+      show: true
+      opposite: true
+      decimals: 0
+      max: 100
+      min: 0
+      apex_config:
+        tickAmount: 5
+    - id: kWh
+      show: true
+      min: 0
+      apex_config:
+        tickAmount: 5
+    - id: header_only
+      show: false
+  card_mod:
+    style:
+      .: |
+        .apexcharts-tooltip {
+          border: 0 !important;
+          border-radius: 4px !important;
+        }
+        .apexcharts-tooltip-title {
+          border-bottom: 0 !important;
+        }
+        .apexcharts-xaxistooltip {
+          display: none;
+        }
+  ```
+
+</details>
+
+<details>
+  <summary>Plotly code</summary>
+
+  _Change 'entitys' in following snippet accordingly_ 😉
+  ```
+  type: custom:plotly-graph
+  title: null
+  time_offset: 12h
+  hours_to_show: 5d
+  refresh_interval: 120
+  view_layout:
+    grid-area: daily
+  layout:
+    xaxis:
+      showgrid: false
+    yaxis:
+      showgrid: false
+      fixedrange: true
+    legend:
+      bgcolor: rgba(0,0,0,0)
+      itemsizing: constant
+      font:
+        size: 12
+    height: 450
+  config:
+    displayModeBar: false
+    scrollZoom: false
+  entities:
+    - entity: sensor.inverter_today_energy_sold
+      statistic: state
+      name: |
+        $fn ({ ys,meta }) =>
+          "💰 " + "Export" + " (" +ys[ys.length - 1]+"kWh)"
+      period: day
+      type: bar
+      texttemplate: '%{y}'
+      filters:
+        - filter: i>0
+      marker:
+        color: rgb(162, 128, 219)
+    - entity: sensor.inverter_today_energy_bought
+      statistic: state
+      name: |
+        $fn ({ ys,meta }) =>
+          "💡 " + "Import" + " (" +ys[ys.length - 1]+"kWh)"
+      period: day
+      type: bar
+      texttemplate: '%{y}'
+      filters:
+        - filter: i>0
+      marker:
+        color: rgb(84, 144, 194)
+    - entity: sensor.inverter_today_production
+      statistic: state
+      name: |
+        $fn ({ ys,meta }) =>
+          "☀️ " + "Solar" + " (" +ys[ys.length - 1]+"kWh)"
+      period: day
+      type: bar
+      texttemplate: '%{y}'
+      filters:
+        - filter: i>0
+      marker:
+        color: rgb(255, 152, 0)
+    - entity: sensor.inverter_today_load_consumption
+      statistic: state
+      name: |
+        $fn ({ ys,meta }) =>
+          "⚡ " + "Load" + " (" +ys[ys.length - 1]+"kWh)"
+      period: day
+      type: bar
+      filters:
+        - filter: i>0
+      texttemplate: '%{y}'
+      marker:
+        color: rgb(95, 182, 173)
+    - entity: sensor.inverter_today_battery_charge
+      statistic: state
+      name: |
+        $fn ({ ys,meta }) =>
+          "🔋 " + "Battery Charge" + " (" +ys[ys.length - 1]+"kWh)"
+      period: day
+      type: bar
+      texttemplate: '%{y}'
+      filters:
+        - filter: i>0
+      marker:
+        color: rgb(240, 98, 146)
+    - entity: sensor.inverter_today_battery_discharge
+      statistic: state
+      name: |
+        $fn ({ ys,meta }) =>
+          "🔋 " + "Battery Discharge" + " (" +ys[ys.length - 1]+"kWh)"
+      period: day
+      type: bar
+      texttemplate: '%{y}'
+      filters:
+        - filter: i>0
+      marker:
+        color: pink
+  ```
+
+</details>
