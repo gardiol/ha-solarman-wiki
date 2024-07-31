@@ -840,7 +840,7 @@
 
 </details>
 
-# Apexcharts Card & Plotly Graph Card
+# Apexcharts & Plotly Graph Card
 ![forecast_daily_stats_graphs](https://github.com/user-attachments/assets/b5ee4989-b57f-4657-a64a-92870b7161b9)
 
 **Dependency**: Apexcharts-card, Plotly Graph Card, Solcast PV Forecast integration, card-mod
