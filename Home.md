@@ -56,17 +56,17 @@ Some might wonder why Energy Dashboard shows different(higher) Load Consumption 
 
 _So for those curious enough here is some insight..._  
 
-#### Inverter power losses calculation [W]:
+#### ⚡ Inverter power losses calculation [W]:
 ```
 Power losses = Battery Power + PV1 Power + PV2 Power - Inverter Power
 ```
 
-#### Total losses calculation [kWh]:
+#### ⚡ Total losses calculation [kWh]:
 ```
 Total losses = Total Energy Import(Bought) + Total Production + Total Battery Discharge - Total Energy Export(Sold) - Total Battery Charge - Total Load Consumption
 ```
 
-#### Today(Daily) losses calculation [kWh]:
+#### ⚡ Today(Daily) losses calculation [kWh]:
 ```
 Today(Daily) losses = Today(Daily) Energy Import(Bought) + Today(Daily) Production + Today(Daily) Battery Discharge - Today(Daily) Energy Export(Sold) - Today(Daily) Battery Charge - Today(Daily) Load Consumption
 ```
