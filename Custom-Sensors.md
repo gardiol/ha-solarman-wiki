@@ -39,7 +39,7 @@ _Custom sensor examples._
     - registers: [0x02A1]
     - registers: [0x02A2]
     - registers: [0x02A3]
-    - subtract:
+    - operator: subtract
       signed:
       registers: [0x027C, 0x02B6]
 ```
@@ -63,13 +63,13 @@ _Custom sensor examples._
       registers: [0x0211]
     - scale: 0.1
       registers: [0x0203]
-    - subtract:
+    - operator: subtract
       scale: 0.1
       registers: [0x0209]
-    - subtract:
+    - operator: subtract
       scale: 0.1
       registers: [0x020E]
-    - subtract:
+    - operator: subtract
       scale: 0.1
       registers: [0x0202]
 ```
@@ -106,13 +106,13 @@ _Custom sensor examples._
       registers: [0x0216, 0x0217]
     - scale: 0.1
       registers: [0x0206, 0x0207]
-    - subtract:
+    - operator: subtract
       scale: 0.1
       registers: [0x020C, 0x020D]
-    - subtract:
+    - operator: subtract
       scale: 0.1
       registers: [0x020F, 0x0210]
-    - subtract:
+    - operator: subtract
       scale: 0.1
       registers: [0x0204, 0x0205]
 ```
@@ -137,10 +137,10 @@ _Custom sensor examples._
       registers: [0x0211]
     - scale: 0.1
       registers: [0x0203]
-    - subtract:
+    - operator: subtract
       scale: 0.1
       registers: [0x0209]
-    - subtract:
+    - operator: subtract
       scale: 0.1
       registers: [0x0202]
 ```
@@ -175,10 +175,10 @@ _Custom sensor examples._
       registers: [0x0216, 0x0217]
     - scale: 0.1
       registers: [0x0206, 0x0207]
-    - subtract:
+    - operator: subtract
       scale: 0.1
       registers: [0x020C, 0x020D]
-    - subtract:
+    - operator: subtract
       scale: 0.1
       registers: [0x0204, 0x0205]
 ```
