@@ -19,3 +19,4 @@ _Here is just a list of devices confirmed from users._
 | ZCS Azzurro 3.3/4.4/5.5/6.6/8.8/11/12 KTL-V3 | zcs_azzurro-ktl-v3.yaml |
 | ZCS Azzurro 3PH HYD 10/15/20k ZSS            | sofar_g3hyd.yaml        |
 | ZCS Azzurro HYD 3/6k ZSS                     | sofar_hyd3k-6k.yaml     |
+| Pylontech Force H1/H2/H3                     | pylontech_Force-H.yaml  |
