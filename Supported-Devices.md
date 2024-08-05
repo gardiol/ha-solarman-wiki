@@ -1,7 +1,7 @@
 _Integration should work with really wide range of devices. That also means all devices supported by Stephan Joubert's integration._
 
 # ✔️ Confirmed
-_Here is just a list of devices confirmed from users._
+_Here is a list of devices confirmed from users._
 | Device                                       | Profile                 |
 |----------------------------------------------|-------------------------|
 | SUN-5/6/8/10/12/15/20/25K-SG01HP3            | deye_sg01hp3.yaml       |
