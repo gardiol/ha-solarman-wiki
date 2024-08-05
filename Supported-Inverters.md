@@ -15,6 +15,7 @@ _Here is just a list of devices confirmed from users._
 | Solis                                        | solis_hybrid.yaml       |
 | Sofar KTLX-G3                                | zcs_azzurro-ktl-v3.yaml |
 | Sofar                                        | sofar_lsw3.yaml         |
+| MICROTEK GTI 3.3KW-M11                       | sofar_lsw3.yaml         |
 | ZCS Azzurro 3.3/4.4/5.5/6.6/8.8/11/12 KTL-V3 | zcs_azzurro-ktl-v3.yaml |
 | ZCS Azzurro 3PH HYD 10/15/20k ZSS            | sofar_g3hyd.yaml        |
 | ZCS Azzurro HYD 3/6k ZSS                     | sofar_hyd3k-6k.yaml     |
