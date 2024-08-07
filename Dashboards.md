@@ -1,4 +1,4 @@
-# Horseshoe gauges
+# 🐎 Horseshoe gauges
 ![wiki_1_1](https://github.com/user-attachments/assets/323eb0fd-9409-49fb-9577-12b6241d7faf)
 
 **Dependency**: Flexible Horseshoe Card for Lovelace, card-mod, Solcast PV Forecast integration (for 'REMAINING')
@@ -747,7 +747,7 @@
 
 </details>
 
-# Power Flow Card Plus
+# ⚡ Power Flow Card Plus
 ![power_flow_card_plus](https://github.com/user-attachments/assets/a18ff34f-dc0e-49c9-aa65-4a1a3d83f518)
 
 **Dependency**: Power Flow Card Plus, card-mod
@@ -840,7 +840,7 @@
 
 </details>
 
-# Apexcharts & Plotly Graph Card
+# 📊 Apexcharts & Plotly Graph Card
 ![forecast_daily_stats_graphs](https://github.com/user-attachments/assets/b5ee4989-b57f-4657-a64a-92870b7161b9)
 
 **Dependency**: Apexcharts-card, Plotly Graph Card, Solcast PV Forecast integration, card-mod
