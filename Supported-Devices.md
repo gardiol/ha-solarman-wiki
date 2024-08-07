@@ -1,3 +1,5 @@
+Currently is supported only Wireless Stick Logger but support for the Ethernet version is in the working.
+
 _Integration should work with really wide range of devices. That also means all devices supported by Stephan Joubert's integration._
 
 # ✔️ Confirmed
