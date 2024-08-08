@@ -6,6 +6,7 @@ Steps:
 1. Open sensors detail page
 2. Click on Settings
 3. Change Entity ID to match new one  
+**First check if entity with that name doesn't already exist and if does delete it using STATISTICS tab in Developer tools!**  
 _Example: Let's say that we want to rename sensor 'Battery SOC' to 'Battery'_  
 _**Current Entity ID**: sensor.inverter_battery_soc_  
 _**New Entity ID**: sensor.inverter_battery_
