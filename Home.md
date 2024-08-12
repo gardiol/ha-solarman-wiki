@@ -89,15 +89,15 @@ template:
   - sensor:
       - name: "Inverter Device Since Last update"
         unique_id: "inverter_device_since_last_update"
-        availability: "{{ has_value('sensor.inverter_connection_state') }}"
-        state: "{{ max((states('sensor.update_ticker') | float - as_timestamp(states.sensor.inverter_connection_state.last_updated)) | round(0, 'ceil'), 0) }}"
+        availability: "{{ has_value('binary_sensor.inverter_connection') }}"
+        state: "{{ max((states('sensor.update_ticker') | float - as_timestamp(states.binary_sensor.inverter_connection.last_updated)) | round(0, 'ceil'), 0) }}"
         state_class: "Measurement"
         device_class: "Duration"
         unit_of_measurement: "s"
       - name: "Inverter Device Last update"
         unique_id: "inverter_device_last_update"
-        availability: "{{ has_value('sensor.inverter_connection_state') }}"
-        state: "{{ (states.sensor.inverter_connection_state.last_updated | as_local).strftime('%H:%M:%S') }} ❘ {{ '%02d' % states('sensor.inverter_device_since_last_update') | int(0) }} seconds ago"
+        availability: "{{ has_value('binary_sensor.inverter_connection') }}"
+        state: "{{ (states.binary_sensor.inverter_connection.last_updated | as_local).strftime('%H:%M:%S') }} ❘ {{ '%02d' % states('sensor.inverter_device_since_last_update') | int(0) }} seconds ago"
         icon: "mdi:calendar-clock"
 ```
 Which provides informantion about how long it is since last update (with resolution of seconds).  
