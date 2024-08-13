@@ -4,18 +4,30 @@ _Change 'entity_ids' in following automations accordingly_ 😉
 **Description**: At start of every day reset Program 1 SOC
 ```
 alias: Inverter Grid Charging Reset
-description: ""
+description: Resets Program 1/3/5 SOC to default values inverter control
 trigger:
   - platform: time
     at: "00:00:00"
 condition: []
 action:
-  - service: number.set_value
+  - action: number.set_value
     metadata: {}
     data:
-      value: "40"
+      value: "30"
     target:
       entity_id: number.inverter_program_1_soc
+  - action: number.set_value
+    metadata: {}
+    data:
+      value: "90"
+    target:
+      entity_id: number.inverter_program_3_soc
+  - action: number.set_value
+    metadata: {}
+    data:
+      value: "60"
+    target:
+      entity_id: number.inverter_program_5_soc
 mode: single
 ```
 
