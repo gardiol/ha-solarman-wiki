@@ -1,7 +1,7 @@
 _Change 'entity_ids' in following automations accordingly_ 😉
 
 # Inverter Grid Charging Reset
-**Description**: At start of every day reset Program 1 SOC
+**Description**: At start of every day reset Program 1/3/5 SOC
 ```
 alias: Inverter Grid Charging Reset
 description: Resets Program 1/3/5 SOC to default values inverter control
