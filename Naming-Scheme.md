@@ -3,7 +3,7 @@
 _Get out of shackles of unperturbable past!_
 
 Steps: 
-1. Open sensors detail page
+1. Open sensor's detail page
 2. Click on Settings
 3. Change Entity ID to match new one  
 **First check if entity with that name doesn't already exist and if does delete it using STATISTICS tab in Developer tools!**  
