@@ -756,86 +756,87 @@
 
   _Change 'entitys' in following snippet accordingly_ 😉
   ```
-  - type: custom:power-flow-card-plus
-    entities:
-      battery:
-        entity: sensor.inverter_battery_power
-        display_state: one_way_no_zero
-        invert_state: false
-        color_value: true
-        use_metadata: true
-        name: ' '
-        state_of_charge_unit_white_space: false
-        state_of_charge: sensor.inverter_battery
-        color_icon: true
-        color_circle: true
-        display_zero_tolerance: 20
-      grid:
-        entity: sensor.inverter_grid_power
-        display_state: one_way
-        use_metadata: true
-        color_icon: true
-        color_value: true
-        invert_state: false
-        icon: mdi:transmission-tower
-        color_circle: true
-        name: ' '
-        display_zero_tolerance: 0
-        secondary_info:
-          entity: sensor.grid_metrics_total_cost
-          decimals: 2
-          unit_of_measurement: ' '
-        power_outage:
-          entity: Inverter Grid State
-          state_alert: 'Off'
-      solar:
-        entity: sensor.inverter_pv_power
-        display_state: one_way
-        use_metadata: true
-        display_zero_state: false
-        invert_state: false
-        color_icon: true
-        secondary_info: {}
-        name: ' '
-        color_value: false
-        icon: mdi:solar-power-variant
-      home:
-        entity: sensor.inverter_load_power
-        override_state: false
-        subtract_individual: false
-        use_metadata: true
-        name: ' '
-        icon: ' '
-        secondary_info:
-          entity: sensor.inverter_power_losses
-          icon: ''
-      fossil_fuel_percentage: {}
-    clickable_entities: true
-    display_zero_lines:
-      mode: transparency
-      transparency: 75
-      grey_color:
-        - 189
-        - 189
-        - 189
-    use_new_flow_rate_model: true
-    w_decimals: 0
-    kw_decimals: 1
-    min_flow_rate: 0.75
-    max_flow_rate: 6
-    max_expected_power: 12000
-    min_expected_power: 0.01
-    watt_threshold: 1000
-    transparency_zero_lines: 0
-    dashboard_link: /energy
-    card_mod:
-      style:
-        .: >
-          .home span.secondary-info, .grid span.secondary-info,
-          span#battery-state-of-charge-text {
-            font-size: 90%;
-            color: var(--secondary-text-color) !important;
-          }
+type: custom:power-flow-card-plus
+entities:
+  battery:
+    entity: sensor.inverter_battery_power
+    display_state: one_way_no_zero
+    invert_state: false
+    color_value: true
+    use_metadata: true
+    name: ' '
+    state_of_charge_unit_white_space: false
+    state_of_charge: sensor.inverter_battery
+    color_icon: true
+    color_circle: true
+    display_zero_tolerance: 20
+  grid:
+    entity: sensor.inverter_grid_power
+    display_state: one_way
+    use_metadata: true
+    color_icon: true
+    color_value: true
+    invert_state: false
+    icon: mdi:transmission-tower
+    color_circle: true
+    name: ' '
+    display_zero_tolerance: 0
+    secondary_info:
+      entity: sensor.grid_metrics_total_cost
+      decimals: 2
+      unit_of_measurement: ' '
+    power_outage:
+      entity: binary_sensor.inverter_grid
+      state_alert: Clear
+  solar:
+    entity: sensor.inverter_pv_power
+    display_state: one_way
+    use_metadata: true
+    display_zero_state: false
+    invert_state: false
+    color_icon: true
+    secondary_info: {}
+    name: ' '
+    color_value: false
+    icon: mdi:solar-power-variant
+  home:
+    entity: sensor.inverter_load_power
+    override_state: true
+    subtract_individual: false
+    use_metadata: true
+    name: ' '
+    icon: ' '
+    secondary_info:
+      entity: sensor.inverter_power_losses
+      icon: ''
+  fossil_fuel_percentage: {}
+clickable_entities: true
+display_zero_lines:
+  mode: transparency
+  transparency: 75
+  grey_color:
+    - 189
+    - 189
+    - 189
+use_new_flow_rate_model: true
+w_decimals: 0
+kw_decimals: 1
+min_flow_rate: 0.75
+max_flow_rate: 6
+max_expected_power: 12000
+min_expected_power: 0.01
+watt_threshold: 1000
+transparency_zero_lines: 0
+dashboard_link: /energy
+card_mod:
+  style:
+    .: >
+      .home span.secondary-info, .grid span.secondary-info,
+      span#battery-state-of-charge-text {
+        font-size: 90%;
+        color: var(--secondary-text-color) !important;
+      }
+
   ```
 
 </details>
