@@ -1,5 +1,5 @@
 # 🐎 Horseshoe gauges
-![wiki_horseshoe](https://github.com/user-attachments/assets/6ff3eb43-d12e-4d15-8e2a-1e30998786a5)
+![wiki_horseshoe](https://github.com/user-attachments/assets/c59aebcf-a226-4222-b776-d2fbfe4c310c)
 
 **Dependency**: Flexible Horseshoe Card for Lovelace, card-mod, Solcast PV Forecast integration (for 'REMAINING')
 <details>
