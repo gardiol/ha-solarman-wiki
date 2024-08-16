@@ -12,12 +12,13 @@ _Here is a list of devices confirmed from users._
 | SUN-M130/160/180/200G4-EU-Q0                 | deye_4mppt.yaml             |
 | SUN1300/1600/1800/2000G3-US-220/EU-230       | deye_4mppt.yaml             |
 | SUN600/800/1000G3-US-220/EU-230              | deye_2mppt.yaml             |
-| DEYE/Sunsynk/SolArk                          | deye_hybrid.yaml            |
+| DEYE/Sunsynk/SolArk Hybrid Inverter          | deye_hybrid.yaml            |
+| KSTAR Hybrid Inverter                        | kstar_hybrid.yaml           |
 | Solis 1P8K-5G                                | solis_1p8k-5g.yaml          |
 | Solis                                        | solis_hybrid.yaml           |
 | Sofar HYD-3000~6000-ES                       | sofar_hyd-es.yaml           |
 | Sofar HYD-3000~6000-EP                       | zcs_azzurro-hyd-zss-hp.yaml |
-| Sofar KTLX-G3                                | zcs_azzurro-ktl-v3.yaml     |
+| Sofar 3.3~12KTLX-G3                          | sofar_tlx-g3.yaml           |
 | Sofar                                        | sofar_lsw3.yaml             |
 | MICROTEK GTI 3.3KW-M11                       | sofar_lsw3.yaml             |
 | ZCS Azzurro 3.3/4.4/5.5/6.6/8.8/11/12 KTL-V3 | zcs_azzurro-ktl-v3.yaml     |
