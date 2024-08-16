@@ -23,5 +23,6 @@ _Here is a list of devices confirmed from users._
 | ZCS Azzurro 3.3/4.4/5.5/6.6/8.8/11/12 KTL-V3 | zcs_azzurro-ktl-v3.yaml     |
 | ZCS Azzurro 3PH HYD 10/15/20k ZSS            | sofar_g3hyd.yaml            |
 | ZCS Azzurro HYD 3/6k ZSS                     | sofar_hyd-es.yaml           |
+| Megarevo R6-15KH3                            | megarevo_r-3h.yaml          |
 | Pylontech Force H1/H2/H3                     | pylontech_Force-H.yaml      |
 | Solarman Smart Meter DTSD422-D3              | solarman_dtsd422-d3.yaml    |
