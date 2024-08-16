@@ -31,13 +31,13 @@ _Which are calculated over data from the inverter_
 - PV Power (combined power of all inputs)
 - Losses (calculates device consumption + AC/DC conversion losses)
   - Power (current losses)
-  - Today Losses
+  - Today's Losses
   - Total Losses
-- Battery SOH
-- Battery State ["charging", "standby", "discharging"]
-- Grid State ["On", "Off"]
-- Today Battery Life Cycles
-- Total Battery Life Cycles
+- Battery
+  - SOH
+  - State ["charging", "idle", "discharging"]
+  - Today's Battery Life Cycles
+  - Total Battery Life Cycles
 
 _More 'bout that [here](https://github.com/davidrapan/ha-solarman/wiki/Custom-sensors)_
 
