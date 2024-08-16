@@ -15,12 +15,13 @@ _Here is a list of devices confirmed from users._
 | DEYE/Sunsynk/SolArk                          | deye_hybrid.yaml            |
 | Solis 1P8K-5G                                | solis_1p8k-5g.yaml          |
 | Solis                                        | solis_hybrid.yaml           |
-| Sofar HYD-3000/6000-EP                       | zcs_azzurro-hyd-zss-hp.yaml |
+| Sofar HYD-3000~6000-ES                       | sofar_hyd-es.yaml           |
+| Sofar HYD-3000~6000-EP                       | zcs_azzurro-hyd-zss-hp.yaml |
 | Sofar KTLX-G3                                | zcs_azzurro-ktl-v3.yaml     |
 | Sofar                                        | sofar_lsw3.yaml             |
 | MICROTEK GTI 3.3KW-M11                       | sofar_lsw3.yaml             |
 | ZCS Azzurro 3.3/4.4/5.5/6.6/8.8/11/12 KTL-V3 | zcs_azzurro-ktl-v3.yaml     |
 | ZCS Azzurro 3PH HYD 10/15/20k ZSS            | sofar_g3hyd.yaml            |
-| ZCS Azzurro HYD 3/6k ZSS                     | sofar_hyd-es.yaml         |
+| ZCS Azzurro HYD 3/6k ZSS                     | sofar_hyd-es.yaml           |
 | Pylontech Force H1/H2/H3                     | pylontech_Force-H.yaml      |
 | Solarman Smart Meter DTSD422-D3              | solarman_dtsd422-d3.yaml    |
