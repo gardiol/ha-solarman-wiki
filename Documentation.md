@@ -12,3 +12,5 @@
 - HYD: 
 [SOFARSOLAR ModBus-RTU Communication Protocol.pdf](https://github.com/user-attachments/files/16641716/SOFARSOLAR.ModBus-RTU.Communication.Protocol.pdf)
 
+### Solis
+- [Without.Control.Grid-Tied.EN.2021.5.26_RS485_MODBUS.pdf](https://github.com/user-attachments/files/16645937/Without.Control.Grid-Tied.EN.2021.5.26_RS485_MODBUS.pdf)  
