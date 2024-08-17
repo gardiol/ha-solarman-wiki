@@ -33,7 +33,7 @@ _Which are calculated over data from the inverter_
   - Power (current losses)
   - Today's Losses
   - Total Losses
-- Battery
+- Battery (for devices which don't provide those through registers)
   - SOH
   - State ["charging", "idle", "discharging"]
   - Today's Battery Life Cycles
