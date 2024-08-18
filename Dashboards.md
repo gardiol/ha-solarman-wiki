@@ -843,10 +843,11 @@ card_mod:
 
 # 📊 Apexcharts & Plotly Graph Card
 ![forecast_daily_stats_graphs](https://github.com/user-attachments/assets/479a7c3a-f379-46e5-afef-d0a8c010481f)
+![prices_and_import_export](https://github.com/user-attachments/assets/1dcef662-19fc-4717-b590-4eba2cebd4ed)
 
 **Dependency**: [apexcharts-card](https://github.com/RomRider/apexcharts-card), [Plotly Graph Card](https://github.com/dbuezas/lovelace-plotly-graph-card), [card-mod](https://github.com/thomasloven/lovelace-card-mod), [Solcast PV Forecast integration](https://github.com/BJReplay/ha-solcast-solar)
 <details>
-  <summary>Apexcharts code</summary>
+  <summary>Apexcharts code 1</summary>
 
   _Change 'entitys' in following snippet accordingly_ 😉
   ```
@@ -1030,7 +1031,152 @@ card_mod:
   ```
 
 </details>
+<details>
+  <summary>Apexcharts code 2</summary>
 
+  _Change 'entitys' in following snippet accordingly_ 😉
+  ```
+type: custom:apexcharts-card
+update_interval: 1m
+graph_span: 25h
+header:
+  show: false
+  standard_format: true
+  show_states: true
+  colorize_states: true
+apex_config:
+  grid:
+    show: true
+    borderColor: '#555'
+    strokeDashArray: 0
+  chart:
+    height: 900px
+  tooltip:
+    enabled: false
+    shared: true
+    followCursor: true
+  xaxis:
+    axisTicks:
+      show: false
+    axisBorder:
+      show: false
+yaxis:
+  - id: left
+    decimals: 2
+    apex_config:
+      tickAmount: 14
+      forceNiceScale: true
+  - id: right
+    min: 0
+    opposite: true
+    decimals: 0
+    apex_config:
+      stepSize: 1
+      tickAmount: 7
+      forceNiceScale: true
+stacked: false
+series:
+  - entity: sensor.grid_metrics_total_cost
+    yaxis_id: right
+    type: line
+    stroke_width: 3
+    name: Tedom
+    color: orange
+    group_by:
+      func: last
+      duration: 1m
+  - entity: sensor.grid_metrics_total_spot_full
+    yaxis_id: right
+    type: line
+    stroke_width: 3
+    name: bezDodavatele
+    color: green
+    group_by:
+      func: last
+      duration: 1m
+  - entity: sensor.grid_metrics_total_spot_full
+    yaxis_id: right
+    type: line
+    stroke_width: 1
+    stroke_dash: 5
+    name: bezDodavatele avg
+    color: green
+    group_by:
+      func: avg
+      duration: 24h
+  - entity: sensor.grid_metrics_total_spot
+    yaxis_id: right
+    type: line
+    stroke_width: 3
+    name: Spot + Regulated price
+    color: rgb(231, 76, 60)
+    group_by:
+      func: last
+      duration: 1m
+  - entity: sensor.current_spot_electricity_price
+    yaxis_id: right
+    type: line
+    stroke_width: 3
+    name: Spot price
+    color: rgb(0, 141, 253)
+    group_by:
+      func: last
+      duration: 1m
+  - entity: sensor.grid_metrics_total_spot_export
+    yaxis_id: right
+    type: line
+    stroke_width: 3
+    name: Spot Export price
+    color: rgb(241, 196, 15)
+    group_by:
+      func: last
+      duration: 1m
+  - entity: sensor.grid_metrics_total_spot_export
+    yaxis_id: right
+    type: line
+    stroke_width: 1
+    stroke_dash: 5
+    name: Spot Export price avg
+    color: rgb(241, 196, 15)
+    group_by:
+      func: avg
+      duration: 24h
+  - entity: sensor.grid_total_energy_bought
+    yaxis_id: left
+    type: column
+    stack_group: Energy
+    stroke_width: 1
+    name: Import
+    color: rgb(84, 144, 194)
+    group_by:
+      func: delta
+      duration: 5min
+  - entity: sensor.grid_total_energy_sold
+    yaxis_id: left
+    type: column
+    stack_group: Energy
+    stroke_width: 1
+    name: Export
+    invert: true
+    color: rgb(162, 128, 219)
+    group_by:
+      func: delta
+      duration: 5min
+card_mod:
+  style:
+    .: |
+      .apexcharts-tooltip {
+        border: 0 !important;
+        border-radius: 4px !important;
+      }
+      .apexcharts-tooltip-title {
+        border-bottom: 0 !important;
+      }
+      .apexcharts-xaxistooltip {
+        display: none;
+      }
+  ```
+</details>
 <details>
   <summary>Plotly code</summary>
 
