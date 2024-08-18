@@ -8,6 +8,9 @@
 - 2MPPT/4MPPT:
 [Deye Modbus protocol V118.pdf](https://github.com/user-attachments/files/16597960/Deye.Modbus.protocol.V118.pdf)  
 
+### KSTAR
+- [KSTAR.Hybrid.Inverter.Modbus.V2.5_2023.03.03.pdf](https://github.com/user-attachments/files/16649915/KSTAR.Hybrid.Inverter.Modbus.V2.5_2023.03.03.pdf)
+
 ### Sofar
 - HYD: 
 [SOFARSOLAR ModBus-RTU Communication Protocol.pdf](https://github.com/user-attachments/files/16641716/SOFARSOLAR.ModBus-RTU.Communication.Protocol.pdf)
