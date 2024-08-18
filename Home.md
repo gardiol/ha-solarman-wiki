@@ -23,8 +23,8 @@ _More 'bout that [here](https://github.com/davidrapan/ha-solarman/wiki/Naming-Sc
 - Attribute type of a sensor which can be attached to any other sensor
 - Configuration items for Battery Nominal Voltage and Battery Life Cycle Rating for calculating SOH and life cycles of the battery
 - Supports configuration of inverter (Battery, Zero Export power, Grid Export Surplus, Work Mode Programs, ...)
-  - Switch, Number and Time entity types for configuring the inverter
-- Configuring of the inverter won't interrupt fetching and has long enough timeout to overcome stick unresponsiveness
+  - Number, Select, Switch and Time entity types for configuring the inverter
+- Configuring of the inverter **won't interrupt fetching and has long enough timeout to overcome stick unresponsiveness**
 
 ## ⚙️ Custom Sensors  
 _Which are calculated over data from the inverter_
