@@ -1,7 +1,7 @@
 # 🐎 Horseshoe gauges
 ![wiki_horseshoe](https://github.com/user-attachments/assets/c59aebcf-a226-4222-b776-d2fbfe4c310c)
 
-**Dependency**: Flexible Horseshoe Card for Lovelace, card-mod, Solcast PV Forecast integration (for 'REMAINING')
+**Dependency**: [Flexible Horseshoe Card for Lovelace](https://github.com/AmoebeLabs/flex-horseshoe-card), [card-mod](https://github.com/thomasloven/lovelace-card-mod), [Solcast PV Forecast integration](https://github.com/BJReplay/ha-solcast-solar) (for 'REMAINING')
 <details>
   <summary>Code</summary>
 
@@ -750,7 +750,7 @@
 # ⚡ Power Flow Card Plus
 ![power_flow_card_plus](https://github.com/user-attachments/assets/a18ff34f-dc0e-49c9-aa65-4a1a3d83f518)
 
-**Dependency**: Power Flow Card Plus, card-mod
+**Dependency**: [Power Flow Card Plus](https://github.com/flixlix/power-flow-card-plus), [card-mod](https://github.com/thomasloven/lovelace-card-mod)
 <details>
   <summary>Code</summary>
 
@@ -844,7 +844,7 @@ card_mod:
 # 📊 Apexcharts & Plotly Graph Card
 ![forecast_daily_stats_graphs](https://github.com/user-attachments/assets/b5ee4989-b57f-4657-a64a-92870b7161b9)
 
-**Dependency**: Apexcharts-card, Plotly Graph Card, Solcast PV Forecast integration, card-mod
+**Dependency**: [apexcharts-card](https://github.com/RomRider/apexcharts-card), [Plotly Graph Card](https://github.com/dbuezas/lovelace-plotly-graph-card), [card-mod](https://github.com/thomasloven/lovelace-card-mod), [Solcast PV Forecast integration](https://github.com/BJReplay/ha-solcast-solar)
 <details>
   <summary>Apexcharts code</summary>
 
