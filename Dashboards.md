@@ -843,7 +843,7 @@ card_mod:
 
 # 📊 Apexcharts & Plotly Graph Card
 ![forecast_daily_stats_graphs](https://github.com/user-attachments/assets/479a7c3a-f379-46e5-afef-d0a8c010481f)
-![prices_and_import_export](https://github.com/user-attachments/assets/1dcef662-19fc-4717-b590-4eba2cebd4ed)
+![prices_and_import_export](https://github.com/user-attachments/assets/0660ddd8-9da1-495d-8d25-c99bd50582a9)
 
 **Dependency**: [apexcharts-card](https://github.com/RomRider/apexcharts-card), [Plotly Graph Card](https://github.com/dbuezas/lovelace-plotly-graph-card), [card-mod](https://github.com/thomasloven/lovelace-card-mod), [Solcast PV Forecast integration](https://github.com/BJReplay/ha-solcast-solar)
 <details>
