@@ -1,4 +1,4 @@
-**Supported are both Wireless and also Ethernet version of the Stick Logger.**
+**Supported are both Wireless & Ethernet version of the Stick Logger.**
 
 _Integration should work with really wide range of devices. That also means all devices supported by Stephan Joubert's integration._
 
