@@ -14,4 +14,4 @@ _**New Entity ID**: sensor.inverter_battery_
 5. Remove device from the integration and then re-add it back again
 _Using new inverter definition profile which match new naming scheme._
 
-Or if you are doing this process before an update to a newer version of the integration which contains changes in namingm proceed with restart as required by HA before the step number 5.
+Or if you are doing this process before an update to a newer version of the integration which contains changes in naming proceed with restart as required by HA before the step number 5.
