@@ -787,7 +787,7 @@ entities:
       unit_of_measurement: ' '
     power_outage:
       entity: binary_sensor.inverter_grid
-      state_alert: Clear
+      state_alert: 'Off'
   solar:
     entity: sensor.inverter_pv_power
     display_state: one_way
@@ -836,7 +836,6 @@ card_mod:
         font-size: 90%;
         color: var(--secondary-text-color) !important;
       }
-
   ```
 
 </details>
