@@ -11,6 +11,7 @@ _Here is a list of devices confirmed from users._
 | SUN-4/5/6/7/8/9/10/12K-G03                   | deye_string.yaml            |
 | SUN-M130/160/180/200G4-EU-Q0                 | deye_4mppt.yaml             |
 | SUN1300/1600/1800/2000G3-US-220/EU-230       | deye_4mppt.yaml             |
+| [SUN-M60/80/100G4-EU-Q0](https://www.deyeinverter.com/product/microinverter-1/SUNM60-80-100G3EUQ0-6001000W-Single-Phase-2-MPPT-Micro-Inverter.html)                       | deye_2mppt.yaml             |
 | SUN600/800/1000G3-US-220/EU-230              | deye_2mppt.yaml             |
 | DEYE/Sunsynk/SolArk Hybrid Inverter          | deye_hybrid.yaml            |
 | KSTAR Hybrid Inverter                        | kstar_hybrid.yaml           |
