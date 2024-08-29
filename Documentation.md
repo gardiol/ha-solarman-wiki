@@ -1,10 +1,10 @@
 # 🚌 Modbus
 
 ### Deye
+- SG04LP3:
+[（新）MODBUS RTU三相储能通信规约V105.1-20231006.pdf](https://github.com/user-attachments/files/16798469/MODBUS.RTU.V105.1-20231006.pdf)  
 - SG01HP3: 
 [MODBUSRTU.V104.3.1.1111_SG01-HP3-AM2.pdf](https://github.com/user-attachments/files/16597916/MODBUSRTU.V104.3.1.1111_SG01-HP3-AM2.pdf)  
-- SG04LP3:
-[MODBUS_RTU_DEYE.pdf](https://github.com/user-attachments/files/16597943/MODBUS_RTU_DEYE.pdf)  
 - 2MPPT/4MPPT:
 [Deye Modbus protocol V118.pdf](https://github.com/user-attachments/files/16597960/Deye.Modbus.protocol.V118.pdf)  
 
