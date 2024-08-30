@@ -6,7 +6,7 @@ _Integration should work with really wide range of devices. That also means all 
 _Here is a list of devices confirmed from users._
 | Device                                       | Profile                     |
 |----------------------------------------------|-----------------------------|
-| [SUN-5/6/8/10/12/15/20/25K-SG01HP3](https://www.deyeinverter.com/product/hybrid-inverter-1/sun5-6-8-10-12-15-20ksg01hp3euam2-520kw-three-phase-2-mppt-hybrid-inverter-high-voltage-battery.html) | deye_sg01hp3.yaml |
+| [SUN-5/6/8/10/12/15/20/25K-SG01HP3-EU-AM2](https://www.deyeinverter.com/product/hybrid-inverter-1/sun5-6-8-10-12-15-20ksg01hp3euam2-520kw-three-phase-2-mppt-hybrid-inverter-high-voltage-battery.html) | deye_sg01hp3.yaml |
 | [SUN-5/6/8/10/12K-SG04LP3](https://www.deyeinverter.com/product/hybrid-inverter-1/sun5-6-8-10-12ksg04lp3.html) | deye_sg04lp3.yaml |
 | [SUN-4/5/6/7/8/9/10/12K-G03](https://www.deyeinverter.com/deyeinverter/2021/11/10/%E3%80%90b%E3%80%91threephasesun-4-5-6-7-8-10k-g03.pdf) | deye_string.yaml |
 | [SUN-M130/160/180/200G4-EU-Q0](https://www.deyeinverter.com/product/microinverter-1/SUNM130-160-200G3EUQ0P1-13002000W-Single-Phase-4-MPPT-Micro-Inverter.html) | deye_4mppt.yaml |
