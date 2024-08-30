@@ -22,7 +22,7 @@ _Here is a list of devices confirmed from users._
 | [Sofar 3.3~12KTLX-G3](https://sofarsolar.eu/products/sofar-3-3k12ktlx-g3/) | sofar_tlx-g3.yaml |
 | [Sofar](https://sofarsolar.eu/product_types/residential/) | sofar_lsw3.yaml |
 | [MICROTEK GTI 3.3KW-M11](https://www.microtek.in/product/solar-solutions/grid-tied-solar-solutions/listing/solar-grid-tie-33kw-m11) | sofar_lsw3.yaml |
-| [ZCS Azzurro 3.3/4.4/5.5/6.6/8.8/11/12 KTL-V3](https://www.zcsazzurro.com/uploads/documetazione/Datasheet-ZCS-3PH-3.3-12KTL-V3-EN.pdf) | zcs_azzurro-ktl-v3.yaml |
+| [ZCS Azzurro 3.3/4.4/5.5/6.6/8.8/11/12K TL-V3](https://www.zcsazzurro.com/uploads/documetazione/Datasheet-ZCS-3PH-3.3-12KTL-V3-EN.pdf) | zcs_azzurro-ktl-v3.yaml |
 | [ZCS Azzurro 3PH HYD 10/15/20k ZSS](https://www.zcsazzurro.com/it/inverter/azzurro-hybrid-storage-inverter-hyd-10000-zss-hyd-20000-zss) | sofar_g3hyd.yaml |
 | [ZCS Azzurro HYD 3/6k ZSS](https://www.zcsazzurro.com/inverter/azzurro-hybrid-storage-inverter-hyd-hyd-3000-zss-hyd-6000-zss) | sofar_hyd-es.yaml |
 | [Afore BNT-KTL](https://www.aforenergy.com/product/show/id/7) | afore_BNTxxxKTL-2mppt.yaml |
