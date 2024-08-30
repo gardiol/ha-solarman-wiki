@@ -14,6 +14,8 @@
 ### Sofar
 - HYD: 
 [SOFARSOLAR ModBus-RTU Communication Protocol.pdf](https://github.com/user-attachments/files/16641716/SOFARSOLAR.ModBus-RTU.Communication.Protocol.pdf)
+- HYD2:
+[sofarhyd-es-me3000sp-modbus-protocol.pdf](https://github.com/user-attachments/files/16822163/sofarhyd-es-me3000sp-modbus-protocol.pdf)
 
 ### Solis
 - Hybrid: 
