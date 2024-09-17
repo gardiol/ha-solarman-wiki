@@ -7,19 +7,19 @@ If you are not living in a place where is energy cost calculated as sum of all t
 
 # ✍ Changes
 _What you need to know before for example switching from Stephan Joubert's integration._
-1. Any custom inverter definition profiles (arbitrarily named) has to be within 'inverter_definitions/custom/' directory to persist through integration updates, etc.
+1. Any custom inverter definition profiles (arbitrarily named) has to be within `inverter_definitions/custom/` directory to persist through integration updates, etc.
 2. Sensors update interval is way more frequent but it does mainly affects sensors like current power, etc. And in a way so that you can always have the most recent and accurate information possible for your automations and live view. When comes to the actual data stored within HA that is controlled by recorder and its sampling rate (default is 5 minutes). So update interval of 5 seconds or for example 60 seconds is no different when comes to amount of stored data in the database.
 3. Don't be scared of changed entity names - entity_ids (HA is smart enough to keep history of all of your sensors and you can even transfer sensor's history under new name - entity_id).  
 _More 'bout that [here](https://github.com/davidrapan/ha-solarman/wiki/Naming-Scheme#sensor-renaming-w-history)_
 
 > [!WARNING]  
-> Way more dangerous is when you load wrong profile (e.g. 'deye_hybrid.yaml' instead of 'deye_sg04lp3.yaml'). It will mess up with your values and thus history (you will have to correct all values manually using Developer Tools) so be careful with selecting appropriate profile under existing name (e.g. when you're re-adding device for some reason).
+> Way more dangerous is when you load wrong profile (e.g. `deye_hybrid.yaml` instead of `deye_sg04lp3.yaml`). It will mess up with your values and thus history (you will have to correct all values manually using Developer Tools) so be careful with selecting appropriate profile under existing name (e.g. when you're re-adding device for some reason).
 
 # 🎁 Features
 - Implementation mainly focused on performance and reliability
 - Discovery and not just during configuration but also as part of initialization (i.e. adapts to changed IP)
 - Registers which will be part of a request are decided dynamically (when not set in the inverter profile)
-  - Can be requested individually in specific intervals according to their 'update_interval' value set in the inverter profile file (defaults to 60 seconds)
+  - Can be requested individually in specific intervals according to their `update_interval` value set in the inverter profile file (defaults to 60 seconds)
 - Attribute type of a sensor which can be attached to any other sensor
 - Configuration items for Battery Nominal Voltage and Battery Life Cycle Rating for calculating SOH and life cycles of the battery
 - Supports configuration of inverter (Battery, Zero Export power, Grid Export Surplus, Work Mode Programs, ...)
