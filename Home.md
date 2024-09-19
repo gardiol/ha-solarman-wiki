@@ -26,6 +26,9 @@ _More 'bout that [here](https://github.com/davidrapan/ha-solarman/wiki/Naming-Sc
   - Number, Select, Switch and Time entity types for configuring the inverter
 - Configuring of the inverter **won't interrupt fetching and has long enough timeout to overcome stick unresponsiveness**
 
+> [!WARNING]  
+> It's not possible to install this integration side by side using HACS with the version from Stephan! It will be overwritten when not done manually.
+
 ## ⚙️ Custom Sensors  
 _Which are calculated over data from the inverter_
 - PV Power (combined power of all inputs)
