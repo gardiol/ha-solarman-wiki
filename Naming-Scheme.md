@@ -17,3 +17,5 @@ _Using new inverter definition profile which match new naming scheme._
 If you are doing this process before an update to a newer version of the integration which contains changes in naming proceed with restart as required by HA before the step number 5.
 
 Or if you already upgraded and want to restore the history there is a chance you will have to rollback to previous entity names by loading up the device with older inverter profile. Do the history transfer by following the steps and then go back to the newer version of profile.
+
+**[Detailed guide](https://github.com/davidrapan/ha-solarman/discussions/127#discussioncomment-10561824) from [@philmassie](https://github.com/philmassie)**
