@@ -40,7 +40,7 @@
               - entity: sensor.inverter_grid_l3_voltage
                 decimals: 1
                 unit: V
-              - entity: sensor.inverter_inverter_frequency
+              - entity: sensor.inverter_grid_frequency
                 decimals: 2
                 unit: Hz
               - entity: sensor.grid_metrics_total_cost
