@@ -8,6 +8,9 @@
 - 2/4MPPT:
 [Deye Modbus protocol V118.pdf](https://github.com/user-attachments/files/16597960/Deye.Modbus.protocol.V118.pdf)  
 
+### Afore
+- Hybrid: [211208 - Afore T6 communication protocol V1.0-211109.xlsx](https://github.com/user-attachments/files/17139137/211208.-.Afore.T6.communication.protocol.V1.0-211109.xlsx)
+
 ### KSTAR
 - Hybrid: [KSTAR.Hybrid.Inverter.Modbus.V2.5_2023.03.03.pdf](https://github.com/user-attachments/files/16649915/KSTAR.Hybrid.Inverter.Modbus.V2.5_2023.03.03.pdf)
 
