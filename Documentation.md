@@ -15,6 +15,8 @@
 - Hybrid: [KSTAR.Hybrid.Inverter.Modbus.V2.5_2023.03.03.pdf](https://github.com/user-attachments/files/16649915/KSTAR.Hybrid.Inverter.Modbus.V2.5_2023.03.03.pdf)
 
 ### Sofar
+- G3: 
+[SOFAR-G3.External.Modbus.Protocol-EN-V1.10.20220622.xlsx](https://github.com/user-attachments/files/17180102/SOFAR-G3.External.Modbus.Protocol-EN-V1.10.20220622.xlsx)
 - HYD: 
 [SOFARSOLAR ModBus-RTU Communication Protocol.pdf](https://github.com/user-attachments/files/16641716/SOFARSOLAR.ModBus-RTU.Communication.Protocol.pdf)
 - HYD2:
