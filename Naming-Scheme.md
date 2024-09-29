@@ -18,4 +18,4 @@ If you are doing this process before an update to a newer version of the integra
 
 Or if you already upgraded and want to restore the history there is a chance you will have to rollback to previous entity names by loading up the device with older inverter profile. Do the history transfer by following the steps and then go back to the newer version of profile.
 
-**[Detailed guide](https://github.com/davidrapan/ha-solarman/discussions/127#discussioncomment-10561824) from [@philmassie](https://github.com/philmassie)**
+**There is also [Detailed guide](https://github.com/davidrapan/ha-solarman/discussions/127#discussioncomment-10561824) or [⚠️ Alternative method](https://github.com/davidrapan/ha-solarman/discussions/183), _use this at your own risk_ from [@philmassie](https://github.com/philmassie)**
