@@ -1181,101 +1181,107 @@ card_mod:
 
   _Change 'entitys' in following snippet accordingly_ 😉
   ```
-  type: custom:plotly-graph
-  title: null
-  time_offset: 12h
-  hours_to_show: 5d
-  refresh_interval: 120
-  view_layout:
-    grid-area: daily
-  layout:
-    xaxis:
-      showgrid: false
-    yaxis:
-      showgrid: false
-      fixedrange: true
-    legend:
-      bgcolor: rgba(0,0,0,0)
-      itemsizing: constant
-      font:
-        size: 12
-    height: 450
-  config:
-    displayModeBar: false
-    scrollZoom: false
-  entities:
-    - entity: sensor.inverter_today_energy_sold
-      statistic: state
-      name: |
-        $fn ({ ys,meta }) =>
-          "💰 " + "Export" + " (" +ys[ys.length - 1]+"kWh)"
-      period: day
-      type: bar
-      texttemplate: '%{y}'
-      filters:
-        - filter: i>0
-      marker:
-        color: rgb(162, 128, 219)
-    - entity: sensor.inverter_today_energy_bought
-      statistic: state
-      name: |
-        $fn ({ ys,meta }) =>
-          "💡 " + "Import" + " (" +ys[ys.length - 1]+"kWh)"
-      period: day
-      type: bar
-      texttemplate: '%{y}'
-      filters:
-        - filter: i>0
-      marker:
-        color: rgb(84, 144, 194)
-    - entity: sensor.inverter_today_production
-      statistic: state
-      name: |
-        $fn ({ ys,meta }) =>
-          "☀️ " + "Solar" + " (" +ys[ys.length - 1]+"kWh)"
-      period: day
-      type: bar
-      texttemplate: '%{y}'
-      filters:
-        - filter: i>0
-      marker:
-        color: rgb(255, 152, 0)
-    - entity: sensor.inverter_today_load_consumption
-      statistic: state
-      name: |
-        $fn ({ ys,meta }) =>
-          "⚡ " + "Load" + " (" +ys[ys.length - 1]+"kWh)"
-      period: day
-      type: bar
-      filters:
-        - filter: i>0
-      texttemplate: '%{y}'
-      marker:
-        color: rgb(95, 182, 173)
-    - entity: sensor.inverter_today_battery_charge
-      statistic: state
-      name: |
-        $fn ({ ys,meta }) =>
-          "🔋 " + "Battery Charge" + " (" +ys[ys.length - 1]+"kWh)"
-      period: day
-      type: bar
-      texttemplate: '%{y}'
-      filters:
-        - filter: i>0
-      marker:
-        color: rgb(240, 98, 146)
-    - entity: sensor.inverter_today_battery_discharge
-      statistic: state
-      name: |
-        $fn ({ ys,meta }) =>
-          "🔋 " + "Battery Discharge" + " (" +ys[ys.length - 1]+"kWh)"
-      period: day
-      type: bar
-      texttemplate: '%{y}'
-      filters:
-        - filter: i>0
-      marker:
-        color: pink
+type: custom:plotly-graph
+title: null
+time_offset: 10h
+hours_to_show: 8d
+refresh_interval: 120
+view_layout:
+  grid-area: daily
+layout:
+  xaxis:
+    showgrid: false
+  yaxis:
+    showgrid: false
+    fixedrange: true
+  legend:
+    bgcolor: rgba(0,0,0,0)
+    itemsizing: constant
+    font:
+      size: 12
+  height: 450
+config:
+  displayModeBar: false
+  scrollZoom: false
+entities:
+  - entity: sensor.inverter_total_energy_export
+    statistic: state
+    name: |
+      $fn ({ ys,meta }) =>
+        "💰 " + "Export" + " (" +ys[ys.length - 1]+"kWh)"
+    period: day
+    type: bar
+    texttemplate: "%{y}"
+    filters:
+      - filter: i>0
+      - delta
+    marker:
+      color: rgb(162, 128, 219)
+  - entity: sensor.inverter_total_energy_import
+    statistic: state
+    name: |
+      $fn ({ ys,meta }) =>
+        "💡 " + "Import" + " (" +ys[ys.length - 1]+"kWh)"
+    period: day
+    type: bar
+    texttemplate: "%{y}"
+    filters:
+      - filter: i>0
+      - delta
+    marker:
+      color: rgb(84, 144, 194)
+  - entity: sensor.inverter_total_production
+    statistic: state
+    name: |
+      $fn ({ ys,meta }) =>
+        "☀️ " + "Solar" + " (" +ys[ys.length - 1]+"kWh)"
+    period: day
+    type: bar
+    texttemplate: "%{y}"
+    filters:
+      - filter: i>0
+      - delta
+    marker:
+      color: rgb(255, 152, 0)
+  - entity: sensor.inverter_total_load_consumption
+    statistic: state
+    name: |
+      $fn ({ ys,meta }) =>
+        "⚡ " + "Load" + " (" +ys[ys.length - 1]+"kWh)"
+    period: day
+    type: bar
+    filters:
+      - filter: i>0
+      - delta
+    texttemplate: "%{y}"
+    marker:
+      color: rgb(95, 182, 173)
+  - entity: sensor.inverter_total_battery_charge
+    statistic: state
+    name: |
+      $fn ({ ys,meta }) =>
+        "🔋 " + "Battery Charge" + " (" +ys[ys.length - 1]+"kWh)"
+    period: day
+    type: bar
+    texttemplate: "%{y}"
+    filters:
+      - filter: i>0
+      - delta
+    marker:
+      color: rgb(240, 98, 146)
+  - entity: sensor.inverter_total_battery_discharge
+    statistic: state
+    name: |
+      $fn ({ ys,meta }) =>
+        "🔋 " + "Battery Discharge" + " (" +ys[ys.length - 1]+"kWh)"
+    period: day
+    type: bar
+    texttemplate: "%{y}"
+    filters:
+      - filter: i>0
+      - delta
+    marker:
+      color: pink
   ```
 
 </details>
