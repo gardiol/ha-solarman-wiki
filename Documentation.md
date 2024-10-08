@@ -26,3 +26,11 @@
 - Hybrid: 
 [RS485_MODBUS-Hybrid-BACoghlan-201811228-1854.pdf](https://github.com/user-attachments/files/16650051/RS485_MODBUS-Hybrid-BACoghlan-201811228-1854.pdf)
 - 1P-5g: [Without.Control.Grid-Tied.EN.2021.5.26_RS485_MODBUS.pdf](https://github.com/user-attachments/files/16645937/Without.Control.Grid-Tied.EN.2021.5.26_RS485_MODBUS.pdf)  
+
+### INVT
+- Hybrid: 
+[INVT.XG.XD.Inverter.Modbus.RTU.Protocol.pdf](https://github.com/user-attachments/files/17296023/INVT.XG.XD.Inverter.Modbus.RTU.Protocol.pdf)
+
+### CHINT
+- Hybrid: 
+[Hybrid.Modbus.Protocol.per.inverter.ibridi.pdf](https://github.com/user-attachments/files/17295986/Hybrid.Modbus.Protocol.per.inverter.ibridi.pdf)
